@@ -1,0 +1,200 @@
+mission01.dart
+coding:
+void main() {   
+print(***** WELCOME TO OUR CLASS *****);   
+print("Register Number: 26PCA149");   
+print("Have a Great Day! Happy Coding!"); 
+}
+
+output:
+***** WELCOME TO OUR CLASS *****
+Register Number: 26PCA149
+Have a Great Day! Happy Coding!
+
+mission02.dart
+coding:
+void main() {
+  var pen = "pen";
+  var pencil = "pencil";
+  var notebook = "Notebook";
+  var penQuantity = 10;
+  var pencilQuantity = 15;
+  var notebookQuantity = 5;
+  print("***** CLASSROOM INVENTORY *****");
+  print("$pen : $penQuantity");
+  print("$pencil : $pencilQuantity");
+  print("$notebook : $notebookQuantity");
+}
+
+output:
+***** CLASSROOM INVENTORY *****
+pen : 10
+pencil : 15
+Notebook : 5
+
+mission03.dart
+coding:
+ void main() {
+  String name = "Pen";
+  int quantity = 5;
+  double price = 10.0;
+  bool available = true;
+  print(name);
+  print(quantity);
+  print(price);
+  print(available);
+}
+
+output:
+Pen
+5
+10.0
+true
+
+mission04.dart
+coding:
+void main() {
+int score = 0;
+print("Starting score: $score");
+score = 10;
+score = 20;
+score = 30;
+print("Final score: $score");
+}
+
+output:
+Starting score: 0
+Final score: 30
+
+mission05.dart
+coding:
+void main() {
+  const collegeName = 'St. Joseph College, Tiruchirappalli';
+  final studentName = 'Ananya Sharma';
+
+  print('------------------------');
+  print('       ID CARD');
+  print('------------------------');
+  print('College : $collegeName');
+  print('Student : $studentName');
+  print('------------------------');
+}
+
+output:
+------------------------
+       ID CARD
+------------------------
+College : St. Joseph College, Tiruchirappalli
+Student : Ananya Sharma
+------------------------
+
+mission06.dart
+coding:
+void main() {
+  num number1 = 10;
+  num number2 = 5.5;
+  dynamic secretText = 'Hello Dart';
+
+  print('$number1 -> ${number1.runtimeType}');
+  print('$number2 -> ${number2.runtimeType}');
+  print('$secretText -> ${secretText.runtimeType}');
+}
+
+output:
+10 -> int
+5.5 -> double
+Hello Dart -> String
+
+mission07.dart
+coding:
+void main() {
+  String firstName = 'Ananya';
+  String? middleName; // defaults to null
+  String lastName = 'Sharma';
+  String? nickname = null;
+
+  print('First Name  : $firstName');
+  print('Middle Name : ${middleName ?? "No middle name"}');
+  print('Last Name   : $lastName');
+  print('Nickname    : ${nickname ?? "No nickname"}');
+}
+
+output:
+First Name  : Ananya
+Middle Name : No middle name
+Last Name   : Sharma
+Nickname    : No nickname
+
+mission08.dart
+coding:
+void main() {
+  String studentName = 'Ananya Sharma';
+  String? nickname;
+  int? bonusMarks;
+  print('--- Before Assigning Values ---');
+  print('Student     : $studentName');
+  print('Nickname    : ${nickname ?? "None"}');
+  print('Bonus Marks : ${bonusMarks ?? 0}');
+  nickname = 'Anu';
+  bonusMarks = 5;
+  print('\n--- After Assigning Values ---');
+  print('Student     : $studentName');
+  print('Nickname    : ${nickname ?? "None"}');
+  print('Bonus Marks : ${bonusMarks ?? 0}');
+}
+
+output:
+--- Before Assigning Values ---
+Student     : Ananya Sharma
+Nickname    : None
+Bonus Marks : 0
+
+--- After Assigning Values ---
+Student     : Ananya Sharma
+Nickname    : Anu
+Bonus Marks : 5
+
+mission09.dart
+coding:
+void main() {
+  String? teamName;
+  String? city;
+
+  String displayTeam = teamName ?? 'Unassigned Squad';
+  String displayCity = city ?? 'Unknown City';
+
+  print('Team : $displayTeam');
+  print('City : $displayCity');
+}
+
+output:
+Team : Unassigned Squad
+City : Unknown City
+
+mission10.dart
+coding:
+void main() {
+  String name = 'Ananya';
+  String course = 'Flutter & Dart';
+  int batchYear = 2026;
+  String city = 'Tiruchirappalli';
+
+  print('=========================================');
+  print('          WELCOME TO THE PROGRAM         ');
+  print('=========================================');
+  print('Hello, $name!');
+  print('Course   : $course');
+  print('Location : $city');
+  print('Batch    : $batchYear (Graduating ${batchYear + 2})');
+  print('=========================================');
+}
+
+output:
+=========================================
+          WELCOME TO THE PROGRAM         
+=========================================
+Hello, Ananya!
+Course   : Flutter & Dart
+Location : Tiruchirappalli
+Batch    : 2026 (Graduating 2028)
+=========================================
