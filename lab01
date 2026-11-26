@@ -10,6 +10,7 @@ output:
 ***** WELCOME TO OUR CLASS *****
 Register Number: 26PCA149
 Have a Great Day! Happy Coding!
+_______________________________________________________________________________________________________________________________________
 
 mission02.dart
 coding:
@@ -31,6 +32,7 @@ output:
 pen : 10
 pencil : 15
 Notebook : 5
+_______________________________________________________________________________________________________________________________________
 
 mission03.dart
 coding:
@@ -50,6 +52,7 @@ Pen
 5
 10.0
 true
+_______________________________________________________________________________________________________________________________________
 
 mission04.dart
 coding:
@@ -65,6 +68,7 @@ print("Final score: $score");
 output:
 Starting score: 0
 Final score: 30
+________________________________________________________________________________________________________________________________________
 
 mission05.dart
 coding:
@@ -87,6 +91,7 @@ output:
 College : St. Joseph College, Tiruchirappalli
 Student : Ananya Sharma
 ------------------------
+________________________________________________________________________________________________________________________________________
 
 mission06.dart
 coding:
@@ -104,6 +109,7 @@ output:
 10 -> int
 5.5 -> double
 Hello Dart -> String
+_______________________________________________________________________________________________________________________________________
 
 mission07.dart
 coding:
@@ -124,6 +130,7 @@ First Name  : Ananya
 Middle Name : No middle name
 Last Name   : Sharma
 Nickname    : No nickname
+_______________________________________________________________________________________________________________________________________
 
 mission08.dart
 coding:
@@ -153,6 +160,7 @@ Bonus Marks : 0
 Student     : Ananya Sharma
 Nickname    : Anu
 Bonus Marks : 5
+________________________________________________________________________________________________________________________________________
 
 mission09.dart
 coding:
@@ -170,6 +178,7 @@ void main() {
 output:
 Team : Unassigned Squad
 City : Unknown City
+________________________________________________________________________________________________________________________________________
 
 mission10.dart
 coding:
@@ -198,3 +207,164 @@ Course   : Flutter & Dart
 Location : Tiruchirappalli
 Batch    : 2026 (Graduating 2028)
 =========================================
+________________________________________________________________________________________________________________________________________
+
+mission11.dart
+coding:
+void main() {
+  String snackName = 'Samosa';
+  int pricePerSnack = 15; // in ₹
+  int quantity = 10;
+  int friends = 4;
+
+  int totalPrice = pricePerSnack * quantity;
+  int eachGets = quantity ~/ friends; // integer division
+  int leftoverSnacks = quantity % friends; // remainder
+
+  print('Snack          : $snackName');
+  print('Quantity       : $quantity @ ₹$pricePerSnack each');
+  print('Total Price    : ₹$totalPrice');
+  print('Shared Among   : $friends friends ($eachGets each)');
+  print('Leftover count : $leftoverSnacks');
+}
+ output:
+Snack          : Samosa
+Quantity       : 10 @ ₹15 each
+Total Price    : ₹150
+Shared Among   : 4 friends (2 each)
+Leftover count : 2
+________________________________________________________________________________________________________________________________________
+
+mission12.dart
+coding:
+void main() {
+  String firstNumberText = '25';
+  String secondNumberText = '37';
+
+  int firstNumber = int.parse(firstNumberText);
+  int secondNumber = int.parse(secondNumberText);
+  int sum = firstNumber + secondNumber;
+
+  print('First number  : $firstNumber');
+  print('Second number : $secondNumber');
+  print('Sum           : ${int.parse(firstNumberText) + int.parse(secondNumberText)} (total: $sum)');
+}
+ output:
+First number  : 25
+Second number : 37
+Sum           : 62 (total: 62)
+________________________________________________________________________________________________________________________________________
+
+mission13.dart
+coding:
+import 'dart:io';
+
+void main() {
+  stdout.write('Enter student name: ');
+  String? input = stdin.readLineSync();
+
+  String studentName = (input == null || input.trim().isEmpty)
+      ? 'Student'
+      : input.trim();
+
+  print('Hello, $studentName! Welcome to Dart.');
+}
+ output:
+Enter student name: kalpana
+Hello, kalpana! Welcome to Dart.
+_________________________________________________________________________________________________________________________________________
+
+mission14.dart
+coding:
+import 'dart:io';
+
+void main() {
+  print('Vanakkam! Welcome to Interview Bot.\n');
+
+  print('1. Un peru enna?');
+  String? name = stdin.readLineSync();
+
+  print('2. Nee entha ooru?');
+  String? city = stdin.readLineSync();
+
+  print('3. Unakku pidicha hobby enna?');
+  String? hobby = stdin.readLineSync();
+
+  print('4. Un next goal enna?');
+  String? goal = stdin.readLineSync();
+
+  print('\n--- Summary ---');
+  print('Name  : $name');
+  print('City  : $city');
+  print('Hobby : $hobby');
+  print('Goal  : $goal');
+  print('\nNandri! All the best!');
+}
+
+output:
+Vanakkam! Welcome to Interview Bot.
+
+1. Un peru enna?
+kalpana
+2. Nee entha ooru?
+nachiyarkovil
+3. Unakku pidicha hobby enna?
+drawing
+4. Un next goal enna?
+want to settle in life
+
+--- Summary ---
+Name  : kalpana
+City  : nachiyarkovil
+Hobby : drawing
+Goal  : want to settle in life
+
+Nandri! All the best!
+________________________________________________________________________________________________________________________________________
+
+mission15.dart
+coding:
+import 'dart:io';
+
+const String course = 'Flutter Course';
+
+void main() {
+  print('Course: $course\n');
+
+  print('Enter name:');
+  String? name = stdin.readLineSync();
+
+  print('Enter nickname (or press Enter):');
+  String? nick = stdin.readLineSync();
+  String nickname = (nick == null || nick.isEmpty) ? 'No nickname' : nick;
+
+  print('Enter age:');
+  int age = int.parse(stdin.readLineSync()!);
+  int nextAge = age + 1;
+
+  print('\n--- Student Profile ---');
+  print('Course        : $course');
+  print('Name          : $name');
+  print('Nickname      : $nickname');
+  print('Age           : $age');
+  print('Next Year Age : $nextAge');
+}
+
+output:
+Course: data science Course
+
+Enter name:
+kalpana
+Enter nickname (or press Enter):
+kalps
+Enter age:
+20
+
+--- Student Profile ---
+Course        : data science Course
+Name          : kalpana
+Nickname      : kalps
+Age           : 20
+Next Year Age : 21
+___________________________________________________________________________________________________________________________________________
+
